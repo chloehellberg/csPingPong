@@ -1,5 +1,5 @@
 using System;
-using PingPong;
+using PingPong.Game;
 
 namespace PingPong {
 
@@ -7,13 +7,14 @@ namespace PingPong {
   {
     public static void Main()
     {
+      Text something = new Text();
+
       Console.WriteLine("Enter a number: ");
       string stringUserInput = Console.ReadLine();
       int userInput = int.Parse(stringUserInput);
 
-      string result = GetResult(userInput);
 
-      Console.WriteLine(result);
+      Console.WriteLine(something.GetResult(userInput));
     }
   }
 }

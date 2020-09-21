@@ -1,35 +1,35 @@
 using System;
 
-namespace PingPong {
+namespace PingPong.Game {
 
-  public class Game
+  public class Text
   {
-    string resultText;
-    public GetResult(int userInput)
+    public string resultText;
+    public string GetResult(int userInput)
     {
-      for (int index = 1; index < userInput; index++)
+      for (int index = 1; index <= userInput; index++)
       {
         if ( index%3 == 0 && index%5 == 0 )
         {
-          string resultText = resultTest + ", Ping-Pong";
+          resultText = resultText + ", Ping-Pong";
         } 
         else if ( index%3 == 0 )
         {
-          string resultText = resultTest + ", Ping";
+          resultText = resultText + ", Ping";
         }
         else if ( index%5 == 0 )
         {
-          string resultText = resultTest + ", Pong";
+          resultText = resultText + ", Pong";
         }
         else
         {
           if ( index == 1 )
           {
-            string resultText = index.ToString();
+            resultText = index.ToString();
           }
           else
           {
-            string resultText = ", " + index.ToString();
+            resultText = resultText + ", " + index.ToString();
           }
           
         }
