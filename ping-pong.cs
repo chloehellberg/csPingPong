@@ -23,11 +23,19 @@ namespace PingPong {
         }
         else
         {
-          string resultText = index.ToString();
+          if ( index == 1 )
+          {
+            string resultText = index.ToString();
+          }
+          else
+          {
+            string resultText = ", " + index.ToString();
+          }
+          
         }
       }
 
-      
+      return resultText;
       
     }
   }

@@ -1,4 +1,5 @@
 using System;
+using PingPong;
 
 namespace PingPong {
 
@@ -10,7 +11,7 @@ namespace PingPong {
       string stringUserInput = Console.ReadLine();
       int userInput = int.Parse(stringUserInput);
 
-      string result = PingPong(userInput);
+      string result = GetResult(userInput);
 
       Console.WriteLine(result);
     }
